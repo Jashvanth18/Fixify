@@ -1,0 +1,26 @@
+
+Install mysql server edition, start the server using services.msc in the run---> start mysql
+
+queries:
+CREATE DATABASE your_database;
+USE your_database;
+show tables;
+system cls;
+SELECT * FROM users; to show records in table
+CREATE TABLE users (id INT, username VARCHAR(50), password VARCHAR(50));
+INSERT INTO users (id, username, password) VALUES (2,'prince','prince123');
+
+--Install eclipse IDE
+--Add the Windows Nightly builder from help--->eclipse marketplace and Install
+
+
+
+
+right click -> project -->buildpath-->configure build path-->java build path--> libraries-->modulepath-->add external jars--> add the connector
+https://dev.mysql.com/downloads/connector/j/
+
+
+add this in module-info.java	
+module welcome {
+	requires java.sql;
+}

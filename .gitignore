@@ -1,0 +1,20 @@
+# Ignore everything in .venv
+.venv/*
+
+# Track app.py and
+!.venv/Scripts/app.py
+
+# Ignore compiled Python files and cache
+*.py[cod]
+__pycache__/
+
+# Ignore virtual environment activation scripts and executables
+*.exe
+*.bat
+*.ps1
+
+# Ignore VSCode settings and environment variable files
+.vscode/
+.env
+*.log
+*.tmp
